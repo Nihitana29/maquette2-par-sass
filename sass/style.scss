@@ -1,0 +1,189 @@
+@import 'variable';
+*{
+    list-style-type: none;
+    text-decoration: none;
+    margin: 0px 20px;
+}
+body{
+    font-family: $fontfamily2;
+    background: $bgcolor1;
+
+}
+header{
+    text-align: center;
+}
+ul.navbar{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    li{
+        margin: 7px;
+        a{
+            color:$color1;
+            padding: 16px;
+            &:hover{
+                color: aliceblue;
+                box-shadow: 0px 0px 10px green;
+            }
+        }
+        ul{
+            margin-left: 700px;
+            display: none;
+            position: absolute;
+            li{
+                display: block;/*manao anilay listes mihidikidina*/
+            }
+        }
+        &:hover{
+            ul{
+                display: block;/*affiche les liste imbriqués dans contact*/
+            }
+        }
+    }
+}
+.map{
+    text-align: center;
+}
+.contenu1{
+    text-align: center;
+    margin-left: 30px;
+    padding: 25px;
+    background: $bgcolor2;
+    margin-top: 7px;
+    h2{
+        color: $color2;
+        font-size: 30px;
+        font-family: $fontfamily4;
+    }
+    p{
+        margin-top: 25px;
+        margin-left: 60px;
+        color: $color1;
+        font-family: $fontfamily4;
+        strong{
+            margin-left: -15px;
+            a{
+                color: $color1;
+                font-weight: 30;
+            }
+        }
+    }
+}
+.corp1{
+    margin-left: 200px;
+    padding: 20px;
+    display: flex;
+    margin-left: 80px;
+    form{
+        padding: 10px;
+        hr{
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        #nom{
+            span{
+                margin-left: 0;
+                color: red;
+            }
+            color:#000000;
+            .nom{
+                height: 20px;
+                width: 250px;
+                margin-left: 0px;
+            }
+        }
+        #prenom, #phone{
+            @extend#nom ;
+        }
+        #mess{
+            span{
+                color: red;
+                margin-left: 0;
+            }
+            color: #050000;
+            .mess{
+                height: 70px;
+                width: 390px;
+                margin-left: 0px;
+            }
+            button{
+                margin-top: 2px;
+                margin-left: 0px;
+                &:hover{
+                    background: rgba(255, 255, 255, 0.466);
+                }
+            }
+        }
+    }
+    .contenu3{
+        background-color: $bgcolor2;
+        margin-left: 100px;
+        .icon1{
+            text-align: center;
+            margin: 50Px 0px;
+            i{
+                color: $color1;
+            }
+            h3{
+                color: $color2;
+            }
+            p{
+                color: $color3;
+                font-size: small; 
+            }
+            p{
+                a{
+                    color: $color3;
+                }
+            }
+        }
+        .icon2, .icon3{
+            @extend.icon1;
+        }
+    }
+}
+.bg-img{
+    background-image: url('img/bg.jpg');
+    background-color: #000000;
+    opacity: 0.6;
+    height: 280px;
+    text-align: center;
+    .contenu0{
+        margin-top: 20px;
+        border: 3px solid rgba(247, 242, 242, 0);
+        h1{
+            color: $color2;
+            font-weight: $fontweight;
+            font-family: $fontfamily3;
+            margin-bottom: 20px;
+        }
+        h2{
+            color: $color2;
+            margin-top: 20Px;
+            font-weight: $fontweight;
+        }
+        p{
+            color: $color2;
+            a{
+                color: rgb(34, 34, 252);
+                margin: 0px 0px;
+            }
+        }
+        button{
+            margin-top: 50px;
+            background-color: $color3;
+            height: 50px;
+            width: 300px;
+            border: none;
+            border-radius: 3px;
+        }
+    }
+}
+footer{
+    text-align: center;
+    margin: 15px 0px;
+    font-size: small ;
+}
+@media (max-width: 785px){
+
+}

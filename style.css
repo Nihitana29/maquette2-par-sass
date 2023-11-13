@@ -1,0 +1,184 @@
+@charset "UTF-8";
+* {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0px 20px;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background: rgba(0, 0, 0, 0.863);
+}
+
+header {
+  text-align: center;
+}
+
+ul.navbar {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+ul.navbar li {
+  margin: 7px;
+}
+ul.navbar li a {
+  color: rgba(31, 167, 56, 0.822);
+  padding: 16px;
+}
+ul.navbar li a:hover {
+  color: aliceblue;
+  box-shadow: 0px 0px 10px green;
+}
+ul.navbar li ul {
+  margin-left: 700px;
+  display: none;
+  position: absolute;
+}
+ul.navbar li ul li {
+  display: block; /*manao anilay listes mihidikidina*/
+}
+ul.navbar li:hover ul {
+  display: block; /*affiche les liste imbriqués dans contact*/
+}
+
+.map {
+  text-align: center;
+}
+
+.contenu1 {
+  text-align: center;
+  margin-left: 30px;
+  padding: 25px;
+  background: rgba(70, 70, 70, 0.404);
+  margin-top: 7px;
+}
+.contenu1 h2 {
+  color: rgba(255, 255, 255, 0.966);
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.contenu1 p {
+  margin-top: 25px;
+  margin-left: 60px;
+  color: rgba(31, 167, 56, 0.822);
+  font-family: sans-serif;
+}
+.contenu1 p strong {
+  margin-left: -15px;
+}
+.contenu1 p strong a {
+  color: rgba(31, 167, 56, 0.822);
+  font-weight: 30;
+}
+
+.corp1 {
+  margin-left: 200px;
+  padding: 20px;
+  display: flex;
+  margin-left: 80px;
+}
+.corp1 form {
+  padding: 10px;
+}
+.corp1 form hr {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.corp1 form #nom, .corp1 form #prenom, .corp1 form #phone {
+  color: #000000;
+}
+.corp1 form #nom span, .corp1 form #prenom span, .corp1 form #phone span {
+  margin-left: 0;
+  color: red;
+}
+.corp1 form #nom .nom, .corp1 form #prenom .nom, .corp1 form #phone .nom {
+  height: 20px;
+  width: 250px;
+  margin-left: 0px;
+}
+.corp1 form #mess {
+  color: #050000;
+}
+.corp1 form #mess span {
+  color: red;
+  margin-left: 0;
+}
+.corp1 form #mess .mess {
+  height: 70px;
+  width: 390px;
+  margin-left: 0px;
+}
+.corp1 form #mess button {
+  margin-top: 2px;
+  margin-left: 0px;
+}
+.corp1 form #mess button:hover {
+  background: rgba(255, 255, 255, 0.466);
+}
+.corp1 .contenu3 {
+  background-color: rgba(70, 70, 70, 0.404);
+  margin-left: 100px;
+}
+.corp1 .contenu3 .icon1, .corp1 .contenu3 .icon2, .corp1 .contenu3 .icon3 {
+  text-align: center;
+  margin: 50Px 0px;
+}
+.corp1 .contenu3 .icon1 i, .corp1 .contenu3 .icon2 i, .corp1 .contenu3 .icon3 i {
+  color: rgba(31, 167, 56, 0.822);
+}
+.corp1 .contenu3 .icon1 h3, .corp1 .contenu3 .icon2 h3, .corp1 .contenu3 .icon3 h3 {
+  color: rgba(255, 255, 255, 0.966);
+}
+.corp1 .contenu3 .icon1 p, .corp1 .contenu3 .icon2 p, .corp1 .contenu3 .icon3 p {
+  color: rgba(4, 179, 4, 0.87);
+  font-size: small;
+}
+.corp1 .contenu3 .icon1 p a, .corp1 .contenu3 .icon2 p a, .corp1 .contenu3 .icon3 p a {
+  color: rgba(4, 179, 4, 0.87);
+}
+.bg-img {
+  background-image: url("img/bg.jpg");
+  background-color: #000000;
+  opacity: 0.6;
+  height: 280px;
+  text-align: center;
+}
+.bg-img .contenu0 {
+  margin-top: 20px;
+  border: 3px solid rgba(247, 242, 242, 0);
+}
+.bg-img .contenu0 h1 {
+  color: rgba(255, 255, 255, 0.966);
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+}
+.bg-img .contenu0 h2 {
+  color: rgba(255, 255, 255, 0.966);
+  margin-top: 20Px;
+  font-weight: 100;
+}
+.bg-img .contenu0 p {
+  color: rgba(255, 255, 255, 0.966);
+}
+.bg-img .contenu0 p a {
+  color: rgb(34, 34, 252);
+  margin: 0px 0px;
+}
+.bg-img .contenu0 button {
+  margin-top: 50px;
+  background-color: rgba(4, 179, 4, 0.87);
+  height: 50px;
+  width: 300px;
+  border: none;
+  border-radius: 3px;
+}
+
+footer {
+  text-align: center;
+  margin: 15px 0px;
+  font-size: small;
+}
+
+/*# sourceMappingURL=style.css.map */
